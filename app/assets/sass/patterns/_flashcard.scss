@@ -1,0 +1,95 @@
+// Pattern: flash cards
+// Problem: interupt the user with important information
+
+// Styling for entire wrapper
+
+div.wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.circle-white {
+  color: #005ea5;
+  background: #fff;
+  float: left;
+  margin-right: 15px;
+}
+
+.circle-step {
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+}
+
+.circle {
+    margin-top: 6px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flash-card {
+  margin-top: 1em;
+  padding: 40px 60px;
+  background: $link-colour;
+  color: #fff;
+
+  header {
+    background-color: inherit;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  ul.how-to-renew {
+    padding-left: 0;
+    list-style: none;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 0;
+      padding: 0;
+      color: white;
+      font-size: 28px;
+    }
+  }
+
+  h1 {
+    color: white;
+    &:first-of-type {
+      margin-top: 0 !important;
+      margin-bottom: 30px;
+    }
+  }
+
+  a {
+    color: $page-colour;
+    &:visited, &:hover, &:active {
+      color: $page-colour; }
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .flash-card {
+      margin-top: 1.25em;
+      padding: 35px 50px;
+    }
+  
+    div.wrapper {
+      max-width: 780px;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 690px) {
+  
+  
+  }
+  
