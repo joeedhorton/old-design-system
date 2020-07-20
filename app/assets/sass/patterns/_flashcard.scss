@@ -35,7 +35,7 @@ div.wrapper {
 
 .flash-card {
   margin-top: 5em;
-  padding: 40px 60px;
+  padding: 40px 50px;
   background: $link-colour;
   color: #fff;
 
@@ -79,17 +79,19 @@ div.wrapper {
   @media (max-width: 768px) {
     .flash-card {
       margin-top: 1.25em;
-      padding: 35px 50px;
+      padding: 25px 35px;
     }
   
     div.wrapper {
       max-width: 780px;
       padding: 20px;
     }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
-  
-  @media (max-width: 690px) {
-  
-  
-  }
-  
