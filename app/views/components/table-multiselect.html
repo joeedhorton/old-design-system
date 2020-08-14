@@ -10,40 +10,52 @@ Table multi-select - Home Office design system
 
 {% include "includes/left-pane__components.html" %}
 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Home Office Design System
+{% endblock %}
+
+{% block content %}
+
 <div class="app-pane__content">
   <main class="app-content" id="main-content">
 
-    <div class="app-prose-scope">
+    <div class="app-prose-scope app-homepage">
 
-      <span class="govuk-caption-xl">Components</span>
-      <h1 class="heading-section">Table multi-select</h1>
-      <p class="govuk-body-l">Allows users to select all rows in a table. Allow them to interact with the whole row rather than just checkbox.</p>
 
-      <h2 class="govuk-heading-m" id="example-component">Example component</h2>
-      <div class="example example-images">
-        <div class="govuk-grid-row">
-          {% include "includes/components/table-multiselect.html" %}
-        </div>
+
+      <div class="govuk-grid-row wrapper">
+
+          <div class="header-logo">
+              {% include "includes/home-office-logo.html" %}
+            </div>
+
+          <!-- Interruption card  -->
+          <div class="flash-card">
+              <header>
+                <h1 class="govuk-heading-l">Our design system has moved</h1>
+              </header>
+              <p>The new web address for our design system is <a href="https://design.homeoffice.gov.uk/">design.homeoffice.gov.uk</a></p>
+          </div>
+
+          <div class="wrapper-footer__system">
+              <div class="footer-message">
+                <p>A Home Office Digital, Data and Technology service</p>
+              </div>
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="https://design-system.service.gov.uk/">GOV.UK design system</a></li>
+                </ul>
+              </div>
+          </div>
+
       </div>
-      <details class="code-details">
-        <summary>HTML</summary>
-        <pre><code class="html">{% filter escape %}{% include "includes/components/table-multiselect.html" %}{% endfilter %}</code></pre>
-      </details>
-      <details class="code-details details-margin-btm">
-        <summary>CSS</summary>
-        <pre><code class="css">{% filter escape %}{% include "includes/css/table.scss" %}{% endfilter %}</code></pre>
-      </details>
 
-      <h2 class="govuk-heading-m">Why have we created this pattern?</h2>
-      <p>There is no standard GDS pattern for selectable tables. This was a pattern created for a service that has been paused. More research is required to see if it meets a need.</p>
-
-      <div class="contact-us">
-       <h2 class="govuk-heading-m">Get in touch</h2>
-       <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system">GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
-     </div>
-
-    </div>
   </main>
 </div>
+
+{% endblock %}
+
 
 {% endblock %}

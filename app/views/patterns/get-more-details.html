@@ -10,69 +10,52 @@ Get more details - Home Office design system
 
 {% include "includes/left-pane__patterns.html" %}
 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Home Office Design System
+{% endblock %}
+
+{% block content %}
+
 <div class="app-pane__content">
   <main class="app-content" id="main-content">
 
-    <div class="app-prose-scope">
+    <div class="app-prose-scope app-homepage">
 
-<!-- ASK USERS FOR / HELP USERS TO / PAGES -->
-      <!-- <span class="govuk-caption-xl">Ask users for</span> -->
-      <span class="govuk-caption-xl">Help users to</span>
-      <!-- <span class="govuk-caption-xl">Pages</span> -->
 
-<!-- PATTERN NAME -->
-      <h1 class="heading-section heading-pattern">Get more details</h1>
-      <p class="also-known-as">Also known as: contextual help</p>
 
-      <!-- <div>
-        <p class="research-status">
-          <strong class="label--recommended govuk-!-margin-top-0 govuk-!-margin-bottom-2">RECOMMENDED</strong><br>
-          <strong class="label--experimental govuk-!-margin-top-0 govuk-!-margin-bottom-2">EXPERIMENTAL</strong><br>
-          This pattern is currently experimental because <a href="/community/stages">more research</a> is needed to validate it.
-        </p>
-      </div> -->
+      <div class="govuk-grid-row wrapper">
 
-<!-- ONE LINE DESCRIPTION -->
-      <p class="govuk-body-l one-line-description">Small overlays containing help content for complex interactions.</p>
+          <div class="header-logo">
+              {% include "includes/home-office-logo.html" %}
+            </div>
 
-      <h2 class="govuk-heading-m">When to use help</h2>
-      <p>Only use help to explain things like business processes. It shouldn't be relied upon to solve design problems - services should always be simple and intuitive (<a href="https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple">service stand point 12</a>). Contextual help is more suited to complex internal services. </p>
+          <!-- Interruption card  -->
+          <div class="flash-card">
+              <header>
+                <h1 class="govuk-heading-l">Our design system has moved</h1>
+              </header>
+              <p>The new web address for our design system is <a href="https://design.homeoffice.gov.uk/">design.homeoffice.gov.uk</a></p>
+          </div>
 
-      <div class="example example-images confirmation">
-        <h2 class="govuk-visually-hidden" id="example-component">An example of authentication</h2>
-        <img src="{{ asset_path }}/images/help.svg" class="confirm-desktop" alt="The first page is a search page on GOV.UK. It shows a search heading and information followed by a search input and button. The second page is the same but has an overlay help box with answers to common questions and a link to full help.">
-        <img src="{{ asset_path }}/images/help-mobile.svg" class="confirmation confirm-mobile" alt="The first page is a search page on GOV.UK. It shows a search heading and information followed by a search input and button. The second page is the same but has an overlay help box with answers to common questions and a link to full help.">
+          <div class="wrapper-footer__system">
+              <div class="footer-message">
+                <p>A Home Office Digital, Data and Technology service</p>
+              </div>
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="https://design-system.service.gov.uk/">GOV.UK design system</a></li>
+                </ul>
+              </div>
+          </div>
+
       </div>
-
-      <h2 class="govuk-heading-m">How to use help</h2>
-      <p>Help should be easy to close, move and minimise until the user needs it.</p>
-      <p>If contextual help doesn&rsquo;t answer a user&rsquo;s question, links to more comprehensive help should be easy to find.</p>
-      <p><a href="https://www.gov.uk/service-manual/design/help-text">GDS has guidance for help content</a>.
-
-      <h2 class="govuk-heading-m">User research</h2>
-      <p>Users find side-by-side guidance more helpful and easier to use.</p>
-      <p>Small overlay windows offer the smallest interference with the users flow.</p>
-      <p>This is a <a href="https://www.nngroup.com/articles/pop-up-adaptive-help/">good article on contextual help</a> from Nielsen Norman.</p>
-
-      <h2 class="govuk-heading-m">Services using this pattern</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>Application platform</li>
-        <li>Entities</li>
-      </ul>
-
-      <h2 class="govuk-heading-m">Related patterns</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/patterns/modal.html">Modal windows</a></li>
-      </ul>
-
-      <div class="contact-us">
-       <h2 class="govuk-heading-m">Get in touch</h2>
-       <p>If you’ve got a question or suggestion share it on the Slack <a href="slack://channel?id=CTXV6L1K4&team=T03TJ3P61">#ho-design-system</a> channel, on <a href="https://github.com/UKHomeOffice/design-system">GitHub</a> or email the design system working group on <a href="mailto:design@digital.homeoffice.gov.uk">design@digital.homeoffice.gov.uk</a>.</p>
-     </div>
-
-    </div>
 
   </main>
 </div>
+
+{% endblock %}
+
 
 {% endblock %}
